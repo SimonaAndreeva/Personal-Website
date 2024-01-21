@@ -1,0 +1,175 @@
+:root{
+    --main-red: #590d22;
+    --main-bright: #E0C2B5;
+    --main-gold: #ffc300;
+    --main-dark: #180B1D;
+
+    --main--font: 'Charm', cursive;
+    --second--font: font-family: 'Raleway', sans-serif;
+}
+
+
+body{
+    background-color:var(--main-bright);
+    color: var(--main-dark);
+    padding: 0;
+    margin: 0;
+	 overscroll-behavior: none;
+	 overflow: hidden;
+}
+
+canvas{
+    position: absolute;
+    z-index: -1;
+}
+
+#navigation{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+#navigation a{
+    padding: 2%;
+    margin-left: 2%;
+    text-decoration: none;
+    font-family: var(--second--font);
+    color: var(--main-red);
+    opacity: 40%;
+    letter-spacing: 3px;
+    font-size: 16px; 
+}
+
+#navigation a:hover{
+    opacity: 100%;
+}
+
+#footer{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#home{
+    margin-top: 7%;
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.landingText{
+    font-size: 120px;
+    font-family: var(--main--font);
+    color: var(--main-red);
+    font-weight: 400;
+}
+
+.title{
+    font-size:32px;
+    font-family: var(--second--font);
+    color: var(--main-red);
+    opacity: 70%;
+}
+
+/*about me*/
+.containerImageText{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imageBox{
+    flex:1;
+}
+
+.image{
+    width: 60%;
+    padding: 2%;
+    border-radius: 50% 50% 0 0;
+    border: solid 4px var(--main-red);
+    border-bottom: solid 20px var(--main-red);
+}
+
+.textBox{
+    flex: 1;
+    padding-top: 5%;
+}
+
+.header{
+    font-family: var(--main--font);
+    font-size: 36px;
+    text-align: left;
+}
+
+.paragraph{
+    font-family: var(--second--font);
+    font-size: 18px;
+    text-align: left;
+    padding-right: 30%;
+    margin-top: 2%;
+}
+
+.textBoxCenter{
+    margin-left: 12%;
+    margin-right: 12%;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#stage {
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+  }
+  
+  line {
+    stroke: var(--main-red);
+    stroke-width: 2;
+  }
+
+  .imageBoxPortfolio{
+
+  }
+
+  .imagePortfolio{
+    width: 100%;
+    align-items: center;
+  }
+
+  .mainImage{
+    width: 70%;
+    height: auto;
+  }
+
+  .word {
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    opacity: 0;
+  }
+  
+  .letter {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  
