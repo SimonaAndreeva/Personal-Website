@@ -11,8 +11,8 @@ const pointer = {
 const params = {
     pointsNumber: 30,
     widthFactor: .3,
-    mouseThreshold: .2,
-    spring: .4,
+    mouseThreshold: .3,
+    spring: .3,
     friction: .5,
     color: '#590d22' // Add your desired color here
 };
