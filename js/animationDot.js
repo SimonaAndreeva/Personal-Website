@@ -9,9 +9,9 @@ const pointer = {
     y: .5 * window.innerHeight,
 }
 const params = {
-    pointsNumber: 40,
+    pointsNumber: 30,
     widthFactor: .3,
-    mouseThreshold: .6,
+    mouseThreshold: .2,
     spring: .4,
     friction: .5,
     color: '#590d22' // Add your desired color here

@@ -36,19 +36,25 @@ function animateLetterIn(nw, i) {
 }
 
 function splitLetters(word) {
-  var content = word.innerHTML;
-  word.innerHTML = '';
-  var letters = [];
-  for (var i = 0; i < content.length; i++) {
-    var letter = document.createElement('span');
-    letter.className = 'letter';
-    letter.innerHTML = content.charAt(i);
-    word.appendChild(letter);
-    letters.push(letter);
+    var content = word.innerHTML;
+    word.innerHTML = '';
+    var letters = [];
+    for (var i = 0; i < content.length; i++) {
+      var letter = document.createElement('span');
+      if (content.charAt(i) === ' ') {
+        // If the character is a space, add a non-breaking space element
+        letter.innerHTML = '&nbsp;';
+      } else {
+        letter.className = 'letter';
+        letter.innerHTML = content.charAt(i);
+      }
+      word.appendChild(letter);
+      letters.push(letter);
+    }
+  
+    wordArray.push(letters);
   }
   
-  wordArray.push(letters);
-}
 
 changeWord();
 setInterval(changeWord, 4000);

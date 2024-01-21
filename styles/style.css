@@ -14,8 +14,12 @@ body{
     color: var(--main-dark);
     padding: 0;
     margin: 0;
-	 overscroll-behavior: none;
-	 overflow: hidden;
+	overscroll-behavior: none;	
+}
+
+
+#homePage{
+    overflow: hidden;
 }
 
 canvas{
@@ -96,27 +100,6 @@ canvas{
     padding-top: 5%;
 }
 
-.header{
-    font-family: var(--main--font);
-    font-size: 36px;
-    text-align: left;
-}
-
-.paragraph{
-    font-family: var(--second--font);
-    font-size: 18px;
-    text-align: left;
-    padding-right: 30%;
-    margin-top: 2%;
-}
-
-.textBoxCenter{
-    margin-left: 12%;
-    margin-right: 12%;
-    align-items: center;
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
 
 #stage {
     position: absolute;
@@ -129,9 +112,6 @@ canvas{
     stroke-width: 2;
   }
 
-  .imageBoxPortfolio{
-
-  }
 
   .imagePortfolio{
     width: 100%;
@@ -172,4 +152,49 @@ canvas{
     transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
+  .headerText{
+    font-family: var(--main--font);
+    font-size: 42px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--main-red);
+  }
+
+  #aboutMe,
+  #contacts{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   
+  .blockContent{
+    margin-left: 15%;
+    margin-right: 20%;
+    margin-top: 2%;
+  }
+
+  .paragraphBlock{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: left;
+    font-size: 18px;
+    color: var(--main-dark);
+  }
+
+  .contentBox{
+    margin-top: 10%;
+  }
+
+  .mainTitle{
+    text-align: left;
+    font-size:24px;
+    font-family: var(--second--font);
+    color: var(--main-red);
+    opacity: 80%;
+    margin-bottom: 2%;
+    margin-top: 7%;
+  }
+
+  .subTitle{
+    opacity: 75%;
+    font-size: 14px;
+  }
