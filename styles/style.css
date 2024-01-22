@@ -5,7 +5,7 @@
     --main-dark: #180B1D;
 
     --main--font: 'Charm', cursive;
-    --second--font: font-family: 'Raleway', sans-serif;
+    --second--font: 'Raleway', sans-serif;
 }
 
 
@@ -20,6 +20,7 @@ body{
 
 #homePage{
     overflow: hidden;
+    justify-content: space-around;
 }
 
 canvas{
@@ -35,14 +36,15 @@ canvas{
 }
 
 #navigation a{
-    padding: 2%;
-    margin-left: 2%;
+    padding-top: 3%;
     text-decoration: none;
     font-family: var(--second--font);
     color: var(--main-red);
     opacity: 40%;
     letter-spacing: 3px;
     font-size: 16px; 
+    text-align: center;
+    flex: 1;
 }
 
 #navigation a:hover{
@@ -55,14 +57,13 @@ canvas{
 }
 
 #home{
-    margin-top: 7%;
-    padding-top: 60px;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
 .landingText{
+    margin-top: 10%;
     font-size: 120px;
     font-family: var(--main--font);
     color: var(--main-red);
@@ -115,7 +116,6 @@ canvas{
 
   .imagePortfolio{
     width: 100%;
-    align-items: center;
   }
 
   .mainImage{
@@ -125,9 +125,10 @@ canvas{
 
   .word {
     position: absolute;
-    top: 60%;
-    left: 42%;
+    top: 50%;
     opacity: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .letter {
@@ -162,14 +163,15 @@ canvas{
 
   #aboutMe,
   #contacts{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 10%;
   }
   
   .blockContent{
-    margin-left: 15%;
     margin-right: 20%;
     margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .paragraphBlock{
@@ -178,10 +180,11 @@ canvas{
     text-align: left;
     font-size: 18px;
     color: var(--main-dark);
+    font-family: var(--second--font);
   }
 
   .contentBox{
-    margin-top: 10%;
+    margin-top: 7%;
   }
 
   .mainTitle{
@@ -191,10 +194,87 @@ canvas{
     color: var(--main-red);
     opacity: 80%;
     margin-bottom: 2%;
-    margin-top: 7%;
+    margin-top: 10%;
   }
 
   .subTitle{
     opacity: 75%;
     font-size: 14px;
+  }
+
+.blockOfTextBlocks{
+  flex: 5;
+  margin-bottom: 7%;
+}
+
+.lineBlock{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sparkle{
+  height: 15px;
+  width: 15px;
+}
+
+.textLine{
+  display: block;
+  width: 2px;
+  background-color: var(--main-red);
+  margin: 20px 0;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  font-family: var(--second--font);
+  color: var(--main-dark);
+  opacity: 60%;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+  @media screen and (max-width: 412px){
+    .landingText{
+      font-size: 48px;
+      margin-top: 60%;
+    }
+    #navigation{
+      margin-right: 0%;
+    }
+    #navigation a{
+      padding-top: 10%;
+      letter-spacing: 2px;
+    }
+    canvas{
+      display: none;
+    }
+    .mainTitle{
+      margin-top: 15%;
+    }
+    .blockOfTextBlocks{
+      margin-bottom: 15%;
+    }
+    .paragraphBlock{
+      font-size: 16px;
+    }
+    .title{
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 768px) and (min-width: 412px){
+    .landingText{
+      font-size: 60px;
+      margin-top: 40%;
+    }
+    canvas{
+      display: none;
+    }
+    .title{
+      font-size: 24px;
+    }
   }
