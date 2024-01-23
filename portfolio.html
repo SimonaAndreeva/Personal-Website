@@ -21,18 +21,104 @@
 
 <body>
     <header id="navigation">
-        <a href="/index.html" class="active">Home</a>
+        <a href="/index.html" class="">Home</a>
         <a href="/aboutMe.html" class="">About me</a>
-        <a href="/portfolio.html" class="">Portfolio</a>
+        <a href="/portfolio.html" class="active">Portfolio</a>
         <a href="/contacts.html" class="">Contacts</a>
     </header>
 
-    <section id="home">
-            <div class="imageBoxPortfolio mainImage">
-                <img class="imagePortfolio" src="/images/UI_FamilyRoots.png">
+    <section id="aboutMe">
+        <div class="contentBox">
+            <div class="headerText">Big Title</div>
+            <div class="blockContent">
+                <div class="lineBlock">
+                    <img class="sparkle" src="/images/sparkle.png">
+                    <div class="textLine" id="lineEducation"></div>
+                    <img class="sparkle" src="/images/sparkle.png">
+                </div>
+                <div class="blockOfTextBlocks">
+                <div class="textBlock">
+                    <div class="mainTitle">Small title</div>
+                    <div class="subTitle">Details</div>
+                    <button id="item1">Open</button>
+                    <div class="popup" id="popup">
+                        <div class="popup-inner">
+                          <div class="popup__photo">
+                            <img src="/images/UI_FamilyRoots.png" alt="">
+                          </div>
+                          <a class="popup__close" href="#">X</a>
+                        </div>
+                      </div>
+                </div>
+                </div>
             </div>
+         </div>
 
+        <div class="contentBox">
+            <div class="headerText">Education</div>
+            <div class="blockContent">
+                <div class="lineBlock">
+                    <img class="sparkle" src="/images/sparkle.png">
+                    <div class="textLine" id="lineEducation"></div>
+                    <img class="sparkle" src="/images/sparkle.png">
+                </div>
+                <div class="blockOfTextBlocks">
+                    <div class="textBlock">
+                        <div class="mainTitle">Bachelor degree in Informatics</div>
+                        <div class="subTitle">Jul 2022 - Present</div>
+                        <button>Open</button>
+                    </div>
+                    <div class="textBlock">
+                        <div class="mainTitle">UI/UX Design</div>
+                        <div class="subTitle">Sep 2020 - May 2023</div>
+                        <button>Open</button>
+                    </div>
+                    <div class="textBlock">
+                        <div class="mainTitle">Mathematics and Computer Science</div>
+                        <div class="subTitle">Sep 2017 - May 2022</div>
+                        <button>Open</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentBox">
+            <div class="headerText">Work experience</div>
+            <div class="blockContent">
+                <div class="lineBlock">
+                    <img class="sparkle" src="/images/sparkle.png">
+                    <div class="textLine" id="lineEducation"></div>
+                    <img class="sparkle" src="/images/sparkle.png">
+                </div>
+                <div class="blockOfTextBlocks">
+                    <div class="textBlock">
+                        <div class="mainTitle">Student teacher</div>
+                        <div class="subTitle">Sep 2023 - Present</div>
+                        <button>Open</button>
+                    </div>
+                    <div class="textBlock">
+                        <div class="mainTitle">Web Developer</div>
+                        <div class="subTitle">Sep 2023 - Present</div>
+                        <button>Open</button>
+                    </div>
+                    <div class="textBlock">
+                        <div class="mainTitle">Inter Web Designer</div>
+                        <div class="subTitle">Apr 2023 - Jul 2023</div>
+                        <button>Open</button>
+                    </div>
+                    <div class="textBlock">
+                        <div class="mainTitle">Robotics team Mentor</div>
+                        <div class="subTitle">Oct 2022 - Aug 2023</div>
+                        <button>Open</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <footer>Simona Andreeva. All rights reserved.</footer>
+
+    <script src="/js/modals.js"></script>
 </body>
 
 </html>
