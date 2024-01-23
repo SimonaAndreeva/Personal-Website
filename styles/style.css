@@ -350,3 +350,14 @@ height: 450px;
   }
   
 }
+
+
+#icon{
+  margin-top: 5%;
+}
+
+.icon{
+  margin-right: 10%;;
+  color: var(--main-red);
+  height: 96px;
+}
