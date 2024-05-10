@@ -51,6 +51,7 @@ window.addEventListener("resize", setupCanvas);
 
 function update(t) {
 
+    console.log("mouseMoved", mouseMoved);
     // for intro motion
     if (!mouseMoved) {
         pointer.x = (.5 + .3 * Math.cos(.002 * t) * (Math.sin(.005 * t))) * window.innerWidth;
@@ -70,7 +71,7 @@ function update(t) {
     });
 
     ctx.lineCap = "round";
-	 ctx.beginPath();
+	ctx.beginPath();
     ctx.moveTo(trail[0].x, trail[0].y);
 
     for (let i = 1; i < trail.length - 1; i++) {
